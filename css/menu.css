@@ -199,11 +199,7 @@
     width: 100%;
     z-index: 9;
   } */
-  .audio{
-    bottom: 0px;
-    position: fixed;
-    right: 0px;
-  }
+  
   aside ul {
     list-style-type: none; 
     top: 0px;
