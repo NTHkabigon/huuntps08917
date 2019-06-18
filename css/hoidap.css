@@ -1,0 +1,29 @@
+/* :root {
+  --nav-color: rgba(255, 255, 255, 0.3);
+  --hover-color: rgba(112, 27, 94, 0.589);
+} */
+
+
+body {
+  margin: 0;        
+}
+.hopthu { 
+  width: 80%;
+  background-color:  rgba(10, 0, 0, 0.596);
+  font-size: 20px;
+  font-style: oblique;
+  align-self: center;  
+  border-radius: 25px;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.hopthu h3{
+  color:  rgb(138, 202, 19)
+}
+.hopthu iframe {
+  color: yellowgreen;
+  font-size: 20px;
+  font-style: oblique;
+}

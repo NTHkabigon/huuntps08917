@@ -1,0 +1,58 @@
+:root {
+  --nav-color: rgba(255, 255, 255, 0.3);
+  --hover-color: rgba(112, 27, 94, 0.589);
+}
+
+body {
+  margin: 0;        
+}
+.register form {
+  height: 40%;
+  width: 60%;
+  color:rgb(163, 245, 10);
+  text-align: center;
+  font-size: 17px;
+  align-self: center;
+}
+
+.register {
+  margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(10, 0, 0, 0.596);
+    height: 80%;
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 10%
+}
+.register form button{
+  color: white;
+  background-color:  rgb(44, 141, 48);
+  height: 30px;
+  width: 100px;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 15px;
+  align-self: center;
+}
+.register ::placeholder {
+  font-style: oblique;
+  color: yellowgreen;
+  opacity: 1; /* Firefox */
+  text-align: center;
+}
+.register input[type=text],  .register input[type=password] {
+  font-size: 80%;
+  color:  rgba(21, 105, 21, 0.836);
+  padding: 5px;
+  text-align: center;
+  width: 60%;
+}
+h3{
+  color:rgb(255, 219, 60);
+}
+/* article{
+  display: flex;
+  justify-content: center;
+} */

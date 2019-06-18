@@ -1,0 +1,10 @@
+ footer {
+  border-top: 5px double rgba(92, 10, 74, 0.781);
+  line-height: 30px;
+  background-color: rgba(111, 197, 41, 0.596);
+  text-align: center;
+  font-variant: initial;
+  clear: both;
+  bottom: 0%;
+  margin-top: 100px
+}

@@ -1,0 +1,221 @@
+:root {
+  --nav-color: rgba(255, 255, 255, 0.3);
+  --hover-color: rgba(112, 27, 94, 0.589);
+}
+.menu {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  clear: both;
+  background-color:rgba(10, 10, 10, 0.445);;
+  height: 80px;
+}
+.header{
+  background-image: url("../img/01-3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+  .menu > ul > li {
+    display: inline-block;
+    }
+  .menu > ul > li > a {
+    display: block;
+  }
+  .menu > ul {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 10px;    
+    text-align: center;
+  }
+  .menu > ul > li > a {
+    text-decoration: none;
+    font-variant: initial;
+    font-size: larger;
+    color: lightseagreen;
+    padding: 0 10px;
+    line-height: 40px;
+  }
+  .menu > ul > li {
+    position: relative;
+  }
+  .menu ul ul {
+    position: absolute;
+    display: none;
+  }
+  .menu ul ul a {
+    display: block;
+  }
+  .menu > ul > li:hover > ul {
+    display: block;
+  }
+  .menu ul ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 120px;
+    background-color: rgba(129, 25, 25, 0.3);
+    box-shadow: 0 0 1px gray;
+  }
+  .menu ul li ul li a {
+    line-height: 30px;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    font-variant: initial;
+    font-size: larger;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .menu ul ul a:hover {
+    background-color: var(--hover-color);
+    color: white;
+    transition: 0.4s;
+  }
+  .container > nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .menu > ul > li > a {     
+    color: white;
+    
+  }
+  .menu ul li a:hover{
+    background-color: var(--hover-color);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .menu ul{
+    text-align: center;
+    align-self: center;
+  }
+  nav img{
+    float: left;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 50px;
+  }
+  nav input{
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 100px;
+    border: 1px solid white;
+    height: 50%;
+  }
+  ::placeholder{
+    color: rgba(248, 245, 245, 0.788);
+    text-align: left;
+    margin: 10px;
+    font-style: oblique;
+  }
+  input[type=text], input[type=password], input[type=search] {
+    font-size: 80%;
+    color:  white;
+    padding: 5px;
+    text-align: left;
+    width: 300px;
+  }
+  .header {
+    height: 400px;
+    width: 100%;
+   
+  }
+  .connect {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(10, 10, 10, 0.527);
+    border-bottom: 1px solid rgba(253, 253, 253, 0.527);
+    }
+  .connect .icon {
+    float: right;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 50px;
+  }
+  .icon img {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .icon a:hover {
+    background-color: rgba(10, 10, 10, 0.456);
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  .connect .taikhoan {
+    float: left;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 50px;
+  }
+  .taikhoan img {
+    margin-right: 3px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  #login {
+    height: 100%;
+    font-size: 17px;
+    padding: 14px;
+    color: white;
+    font-style: oblique;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 10px;
+  }
+  #SignUp {
+    height: 100%;
+    font-size: 17px;
+    padding: 14px;
+    color: white;
+    font-style: oblique;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 10px;
+  }
+  .taikhoan a:hover {
+    background-color: rgba(10, 10, 10, 0.456);
+    transition: 0.7s;
+    color: rgba(95, 148, 11, 0.456);
+  }
+  .container > article {
+    min-height: 500px;
+    width: 75%;
+    float: left;
+  }
+
+  /* .flex{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9;
+  } */
+  .audio{
+    bottom: 0px;
+    position: fixed;
+    right: 0px;
+  }
+  aside ul {
+    list-style-type: none; 
+    top: 0px;
+    }
+    a{
+      text-decoration: none;
+    }
+  .co-dinh-menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.603)
+  }
+  

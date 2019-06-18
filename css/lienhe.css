@@ -1,0 +1,41 @@
+:root {
+    --nav-color: rgba(255, 255, 255, 0.3);
+    --hover-color: rgba(112, 27, 94, 0.589);
+  }
+  
+  body {
+    /* position: relative;
+  max-width: 100%;
+  height: 700px;
+    background-image: url("../img/banco6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    margin: 0;        
+  }
+   form {
+    height: 50%;
+    width: 80%;
+    color: white;
+    text-align: center;
+    background-color: rgba(37, 37, 37, 0.671);
+    font-size: 20px;
+    font-style: oblique;
+    align-self: center;
+    letter-spacing: 1px;
+    margin: auto;
+      }
+  
+  /* .lienhe {
+      top: 100px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+  } */
+   form a{
+      color:yellowgreen;
+      font-size: 20px;
+      font-style: oblique;
+  }
+  form h3{
+    color:rgb(138, 202, 19);
+}

@@ -1,0 +1,49 @@
+:root {
+    --nav-color: rgba(255, 255, 255, 0.3);
+    --hover-color: rgba(112, 27, 94, 0.589);
+  }
+ 
+body {
+ 
+  margin: 0;        
+}
+form {
+    height: 60%;
+    width: 60%;
+    color: rgb(138, 202, 19);
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.651);
+    font-size: 23px;
+    font-style: oblique;
+    align-self: center;
+    margin: auto;
+  }
+  
+  
+   form button{
+    color: white;
+    background-color:  rgba(23, 99, 40, 0.747);
+    height: 30px;
+    width: 120px;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+  }
+  input[type=text]{
+    font-size: 80%;
+    color:  rgba(112, 27, 94, 0.8);
+    padding: 5px;
+    text-align: center;
+    width: 68%
+  }
+ textarea [id="5"]{
+   font-size: 50%
+ }
+  form h4{
+      color:rgb(138, 202, 19);
+}
+form ::placeholder{
+  font-size: 17px;
+  color: rgb(138, 202, 19);
+}
