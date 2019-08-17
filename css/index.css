@@ -142,3 +142,26 @@ span:hover{
 .active, .dot:hover {
   background-color: green;
 }
+.diadiem {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 255px;
+  max-width: 315px;
+  height: 220px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.diadiem img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+.diadiem:hover img,
+.diadiem.hover img {
+  -webkit-transform: translateX(250px);
+  transform: translateX(250px);
+}
+/*
