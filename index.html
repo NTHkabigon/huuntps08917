@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/dangnhap.css">
+    <!-- <link rel="stylesheet" href="css/dangnhap.css"> -->
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/dangky.css">
     <link rel="stylesheet" href="css/gopy.css">
@@ -17,14 +17,54 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/load-trang.js"></script>
     <script src="js/cuonmenu.js"></script>
+    <script>
+        var anhAr = [];
+        var currentIndex=0; 
+        var dots = document.getElementsByClassName("dot");
+       
+        function loadAnh() {
+        for (var i = 0; i < 6; i++) { 
+             anhAr[i] = new Image(); 
+             anhAr[i].src = "img/banner"+i+".jpg";
+            }
+        
+        }
+        function next() {
+        if (currentIndex < anhAr.length-1) { 
+            currentIndex++;
+            document.getElementById("banner").src = anhAr[currentIndex].src;
+            dots[currentIndex].className
+        }
+        
+        
+        if(currentIndex == anhAr.length-1){
+             currentIndex = -1;
+        }       
+        }
+        function onClickEvent(){
+                    if(currentIndex < 5){
+                        var t = setInterval("next()",3000);
+                    }
+                }
+        function currentSlide(n) {
+            document.getElementById("banner").src = anhAr[n].src;}
+    </script>
 </head>
 
-<body>
+<body onload = "loadAnh();onClickEvent();">
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
     <div class="container">
         <div class="header">
-            <!-- <img src="img/01-3.jpg" alt="" width="100%" height="100%"> -->
+            <img src="img/banner0.jpg" alt="" width="100%" height="400" id="banner"  onclick="next()">
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(0)"></span> 
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                  </div>
             <div class="flex">
                 <div class="connect">
                     <div class="icon">
@@ -35,10 +75,8 @@
                         <a href=""> <img src="img/yt.png" alt="youtube" height="40" width="40"> </a>
                     </div>
                     <div class="taikhoan">
-                        <img src="img/login.png" alt="" height="40" width="40">
-                        <a id="login">Đăng Nhập</a>
-                        <img src="img/su.png" alt="" height="40" width="40">
-                        <a id="SignUp">Đăng Ký</a>
+                        <img src="img/icons8-account-40.png" alt="" height="40" width="40">
+                        <a id="login">Tài khoản</a>
                     </div>
                 </div>
                 <nav class="menu">
@@ -47,7 +85,7 @@
                         <li><a href="index.html">Trang chủ</a> </li>
                         <li> <a href="#">Địa Điểm</a>
                             <ul>
-                                <li> <a id="mienbac">Miền Bắc</a> </li>
+                                <li> <a id="mienba">Miền Bắc</a> </li>
                                 <li> <a id="mientrung">Miền Trung</a> </li>
                                 <li> <a id="miennam">Miền Nam</a> </li>
                             </ul>
@@ -87,7 +125,7 @@
                                 style="color:rgb(5, 35, 100) ; font-size:15px;"> Mỗi người </i> <br>
                         </div>
                         <div class="btn-view">
-                            <button type="button" class="view">Xem ></button>
+                            <button type="button" class="view" id="mienbac">Xem ></button>
                         </div>
                     </div>
                     <div class="diadiem" id="phuquoc">
@@ -120,7 +158,7 @@
                                 style="color:rgb(5, 35, 100) ; font-size:15px;"> Mỗi người </i> <br>
                         </div>
                         <div class="btn-view">
-                            <button type="button" class="view">Xem ></button>
+                            <button type="button" class="view" >Xem ></button>
                         </div>
                     </div>
                     <div class="diadiem" id="bentre">

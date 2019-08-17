@@ -6,68 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Đăng Nhập</title>
     <link rel="stylesheet" href="css/dangnhap.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/dangnhap.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/checklogin.js"></script>
+    <script src="js/checkSignUp.js"></script>
 </head>
 
 <body>
-    <!-- <div class="container">
-        <div class="header">
-            <img src="img/01-3.jpg" alt="" width="100%" height="100%">
-            <div class="flex">
-                <div class="connect">
-                    <div class="icon">
-                        <a href=""> <img src="img/fb (2).png" alt="facebook" height="40" width="40"> </a>
-                        <a href=""> <img src="img/it.png" alt="instagram" height="40" width="40"> </a>
-                        <a href=""> <img src="img/tw.png" alt="twitter" height="40" width="40"> </a>
-                        <a href=""> <img src="img/g (2).png" alt="G+" height="40" width="40"> </a>
-                        <a href=""> <img src="img/yt.png" alt="youtube" height="40" width="40"> </a>
-                    </div>
-                    <div class="taikhoan">
-                        <img src="img/login.png" alt="" height="40" width="40">
-                        <a id="login" href="">Đăng Nhập</a>
-                        <img src="img/su.png" alt="" height="40" width="40">
-                        <a id="SignUp" href="dangky.html">Đăng Ký</a>
-                    </div>
+    <br>
+    <section class="forms-section">
+      
+        <div class="forms">
+          <div class="form-wrapper is-active">
+            <button type="button" class="switcher switcher-login">
+              Đăng Nhập
+              <span class="underline"></span>
+            </button>
+            <form class="form form-login">
+              <fieldset>
+                <legend>Please, enter your email and password for login.</legend>
+                <div class="input-block">
+                  <label for="login-email">Email</label>
+                  <input id="login-email" type="email" >
                 </div>
-                <nav class="menu">
-                    <img src="img/imagesg.png" alt="logo" align="left" height="85" width=""> <br>
-                    <ul>
-                        <li><a href="index.html">Trang chủ</a> </li>
-                        <li> <a href="#">Địa Điểm</a>
-                            <ul>
-                                <li> <a href="#">Miền Bắc</a> </li>
-                                <li> <a href="#">Miền Trung</a> </li>
-                                <li> <a href="#">Miền Nam</a> </li>
-                            </ul>
-                        </li>
-                        <li> <a href="gioithieu.html">Giới thiệu</a> </li>
-                        <li> <a href="lienhe.html">Liên hệ</a> </li>
-                        <li> <a href="gopy.html">Góp ý</a> </li>
-                        <li> <a href="hoidap.html">Trao đổi</a> </li>
-                        <input placeholder="Tìm Kiếm..." type="text">
-                    </ul>
-                </nav>
-            </div>
-        </div> -->
-    <!-- <article> -->
-        <script src="js/checklogin.js"></script>
-        <div class="login">
-            <form>
-                <h3>Đăng Nhập</h3>
-                <input placeholder="Tên Đăng Nhập" type="text" name="tendangnhap" id="ten"><br>
-                <br>
-                <input placeholder="Mật Khẩu" id="matkhau" type="password"><br>
-                <br>
-                <label> <input id="nhomk" type="checkbox"> Nhớ mật khẩu?</label><br>
-                <br>
-                <button type="button" onclick="checkLogin()">Đăng Nhập</button>
-                <br>
-                <br>
+                <div class="input-block">
+                  <label for="login-password">Mật Khẩu</label>
+                  <input id="login-password" type="password" >
+                </div>
+              </fieldset>
+              <input type="submit" id="btnDangNhap" value="Đăng Nhập" class="btn-login" >
             </form>
-
+          </div>
+          <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+              Đăng Ký
+              <span class="underline"></span>
+            </button>
+            <form class="form form-signup">
+              <fieldset>
+                <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                <div class="input-block">
+                  <label for="signup-email">Email</label>
+                  <input id="signup-email" type="email" >
+                </div>
+                <div class="input-block">
+                  <label for="signup-password">Mật Khẩu</label>
+                  <input id="signup-password" type="password" >
+                </div>
+                <div class="input-block">
+                  <label for="signup-password-confirm">Nhập Lại Mật Khẩu</label>
+                  <input id="signup-password-confirm" type="password" >
+                </div>
+              </fieldset>
+              <input type="submit" id="btnDangKy" value="Đăng Ký" class="btn-signup">
+            </form>
+          </div>
         </div>
-   
+      </section>
 </body>
 
 

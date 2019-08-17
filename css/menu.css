@@ -11,9 +11,14 @@
   clear: both;
   background-color:rgba(10, 10, 10, 0.445);;
   height: 80px;
+  margin-top: 0px;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  z-index: 1000;
 }
 .header{
-  background-image: url("../img/01-3.jpg");
+  /* background-image: url("../img/01-3.jpg"); */
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -132,6 +137,10 @@
     height: 50px;
     background-color: rgba(10, 10, 10, 0.527);
     border-bottom: 1px solid rgba(253, 253, 253, 0.527);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
     }
   .connect .icon {
     float: right;
@@ -139,6 +148,7 @@
     justify-content: center;
     position: relative;
     margin-right: 50px;
+    margin-top: 0px;
   }
   .icon img {
     margin-right: 10px;

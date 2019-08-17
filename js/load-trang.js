@@ -23,5 +23,7 @@ $(document).ready(function() {
     $('#traodoi').click(function(){
         $("article").load("hoidap.html")
     });
-    
+    $('#phuquoc').click(function(){
+        $("article").load("mientrung.html")
+    });
 });
