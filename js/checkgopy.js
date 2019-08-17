@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#gopy").click(function() {
+    $("#gui").click(function() {
        var username = $("#email").val();
        var password = $("#hoten").val();
        var noidung =$("#noidung").val();
@@ -9,7 +9,7 @@ $(document).ready(function () {
        }
        else{
            alert('Góp ý của bạn đã được gửi. Chân Thành Cảm ơn!')
-           return
+           
        }
 
     });
